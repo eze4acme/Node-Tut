@@ -67,10 +67,10 @@ const eventEmitter = require('events')
 //     console.log(result);
 // })
 
-const server = http.createServer()
+// const server = http.createServer()
 
-server.on('request', (req, res) =>{
-    const text = fs.readFileSync('./context/big.txt', 'utf-8')
-    res.end(`<h6>${text}</h6>`)
-})
-server.listen(4000)
+// server.on('request', (req, res) =>{
+//     const text = fs.readFileSync('./context/big.txt', 'utf-8')
+//     res.end(`<h6>${text}</h6>`)
+// })
+// server.listen(4000)
