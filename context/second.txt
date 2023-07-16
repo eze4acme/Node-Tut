@@ -1,0 +1,21 @@
+Here is a 194 character explanation of the Node.js event loop with a code snippet:
+
+The event loop allows Node.js to perform non-blocking I/O operations despite using a single thread.
+ It works like this:
+
+```js
+// Blocking operation like reading file
+fs.readFile(file, () => {
+  // Callback function queued in callback queue  
+  console.log("File contents") 
+})
+
+// While file reads, event loop proceeds to next queued event
+process.nextTick(() => {
+  console.log("Next tick") 
+})
+```
+
+When I/O finishes, its callback is pushed to the callback queue. 
+The event loop checks the call stack, executes the callback function if empty,
+ and continues processing the event queue. This allows non-blocking execution so Node can handle high throughput.
