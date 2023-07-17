@@ -50,7 +50,7 @@ console.log(char.join(''));
 const arr = Array.from({length: 10}, () => {
     const randNum = Math.floor(Math.random()*char.length)
     console.log(randNum);
-   return char[randNum]
+   return char.at(randNum)
 })
 console.log(arr.join(''));
 
