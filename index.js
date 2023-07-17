@@ -1,10 +1,10 @@
-const fs = require('fs')
-const data = require('./data')
+// const fs = require('fs')
+// const data = require('./data')
 
-for (let i = 0; i < 10000; i++) {
-    fs.writeFileSync('./context/big.txt', `${data}${i}\n`, {flag: 'a'})
+// for (let i = 0; i < 10000; i++) {
+//     fs.writeFileSync('./context/big.txt', `${data}${i}\n`, {flag: 'a'})
     
-}
+// }
 
 
 
