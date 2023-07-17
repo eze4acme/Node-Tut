@@ -53,3 +53,8 @@ const arr = Array.from({length: 10}, () => {
    return char[randNum]
 })
 console.log(arr.join(''));
+
+
+const setPpl = ['mark', 'like', 'mark', 'shake']
+
+console.log([ "all",...new Set(setPpl)]);
