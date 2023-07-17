@@ -58,3 +58,10 @@ console.log(arr.join(''));
 const setPpl = ['mark', 'like', 'mark', 'shake']
 
 console.log([ "all",...new Set(setPpl)]);
+
+ async function fetchData (){
+    const res = await fetch('http://hn.algolia.com/api/v1/items')
+    const data = await res.json()
+    console.log(data)
+ }
+ fetchData()

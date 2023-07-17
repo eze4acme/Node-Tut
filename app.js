@@ -19,6 +19,13 @@ app.get('/api/products/:productID', (req, res) =>{
     const singleProduct = products.find(product => product.id === Number(req.params.productID))
     res.json(singleProduct)
 })
+app.get('/api/products/:productID/reviews/:reviewID', (req, res) =>{
+   console.log(req.params);
+    res.send('hello world')
+})
+
+console.log([...products])
+
 
 app.listen(5000, ()=>{
     console.log('App on port 5000');
