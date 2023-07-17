@@ -36,9 +36,10 @@
 const list = document.querySelectorAll('.player-piece')
 console.log(list);
 
-
-
-
+console.log(Array.from(list));
+const newList = Array.from(list)
+const newItem = newList.find((item) => item.innerHTML === 'player')
+console.log(newItem);
 
 
 // const text = 'baby linda'
