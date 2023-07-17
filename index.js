@@ -33,7 +33,8 @@
 
 // block() // Don't do this!
 
-
+const list = document.querySelectorAll('.player-piece')
+console.log(list);
 
 
 
