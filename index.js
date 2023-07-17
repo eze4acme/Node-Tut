@@ -47,7 +47,9 @@ const char = Array.from(text)
 
 console.log(char.join(''));
 
-const arr = Array.from({length: 21}, () => {
-    return char
+const arr = Array.from({length: 10}, () => {
+    const randNum = Math.floor(Math.random()*char.length)
+    console.log(randNum);
+   return char[randNum]
 })
-console.log(arr);
+console.log(arr.join(''));
