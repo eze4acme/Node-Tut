@@ -8,19 +8,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // Fetch data from API
 // //The fetchAPI call returns a promise which resolves asynchronously later.
 // fetchAPI('/users') 
@@ -45,3 +32,19 @@
 // }
 
 // block() // Don't do this!
+
+
+
+
+
+
+
+// const text = 'baby linda'
+// const char = Array.from(text)
+
+// console.log(char.join(''));
+// const item = 'hi'
+// const arr = Array.from({length: 21}, () => {
+//     return char
+// })
+// console.log(arr);
