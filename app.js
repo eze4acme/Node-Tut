@@ -1,19 +1,54 @@
 const express = require('express')
 const app = express()
-app.get('/', (req, res) => {
-    res.status(200).send('Home Page')
-})
-app.get('/about', (req, res) => {
-    res.status(200).send('About Page')
-})
-app.all('*', (req, res) => {
-    res.status(400).send('OppS! page not found!!!')
+
+app.get('/', (req, res) =>{
+   res.json([{name: 'luke'}, {name: 'beauty'}]) 
 })
 
+app.listen(5000, console.log('listen on port 5000'))
 
-app.listen(5000, () => {
-    console.log('App listen on port 5000');
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const express = require('express')
+// const app = express()
+// app.get('/', (req, res) => {
+//     res.status(200).send('Home Page')
+// })
+// app.get('/about', (req, res) => {
+//     res.status(200).send('About Page')
+// })
+// app.all('*', (req, res) => {
+//     res.status(400).send('OppS! page not found!!!')
+// })
+
+
+// app.listen(5000, () => {
+//     console.log('App listen on port 5000');
+// })
 
 
 
