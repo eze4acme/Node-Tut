@@ -32,20 +32,7 @@
 // }
 
 // block() // Don't do this!
-function generatePassword(length) {
-  const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+';
-  
-  const password = Array.from({ length }, () => {
-    const randomIndex = Math.floor(Math.random() * charset.length);
-    return charset[randomIndex];
-  }).join('');
 
-  return password;
-}
-
-// Usage example
-const newPassword = generatePassword(10);
-console.log(newPassword);
 
 
 
