@@ -33,21 +33,21 @@
 
 // block() // Don't do this!
 
-const list = document.querySelectorAll('.player-piece')
-console.log(list);
+// const list = document.querySelectorAll('.player-piece')
+// console.log(list);
 
-console.log(Array.from(list));
-const newList = Array.from(list)
-const newItem = newList.find((item) => item.innerHTML === 'player')
-console.log(newItem);
+// console.log(Array.from(list));
+// const newList = Array.from(list)
+// const newItem = newList.find((item) => item.innerHTML === 'player')
+// console.log(newItem);
 
 
-// const text = 'baby linda'
-// const char = Array.from(text)
+const text = 'babylinda'
+const char = Array.from(text)
 
-// console.log(char.join(''));
-// const item = 'hi'
-// const arr = Array.from({length: 21}, () => {
-//     return char
-// })
-// console.log(arr);
+console.log(char.join(''));
+
+const arr = Array.from({length: 21}, () => {
+    return char
+})
+console.log(arr);
